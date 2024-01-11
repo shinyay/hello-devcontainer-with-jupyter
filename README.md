@@ -102,6 +102,10 @@ Follow the steps below to execute **Dev Containers**.
 
 1. Open **Command Pallette** by `F1`
 2. Select `> Dev Containers: Reopen in Container`
+3. Open **Command Pallette** by `F1` on the Remote side 
+4. Select `> Jupyter: Import Jupyter Notebook`
+5. Select `Interactive-1.ipynb`
+6. Select `Run Cell`
 
 ## Demo
 
