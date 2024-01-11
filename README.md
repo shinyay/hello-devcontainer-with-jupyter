@@ -29,6 +29,19 @@ RUN pip install ipykernel jupyter
 ```
 
 ```yaml
+version: "3"
+services:
+  jupyter:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    environment:
+      PYTHONPATH: /workspace
+    volumes:
+      - ..:/workspace
+    ports:
+      - 8888:8888
+    command: sleep infinity
 ```
 
 ## Demo
