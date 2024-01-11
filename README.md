@@ -2,11 +2,17 @@
 
 I know that many Python developers use **Jupyter**. I have just started learning Python, but I use Jupyter to check the operation because it is useful.
 
+The sample in this repository is a sample of running Jupyter in a Docker container and accessing and using that environment from VS Code.
+
 ## Description
 
-### Directory
+There are three files used to configure this environment.
 
-The project consists of the following
+- **Dockerfile**
+- **compose.yaml**
+- **devcontainer.json**
+
+Place them under the `.devcontainer` directory.
 
 ```shell
 .devcontainer/
@@ -14,6 +20,10 @@ The project consists of the following
 ├── compose.yaml
 └── devcontainer.json
 ```
+
+### .devcontainer directory
+
+If there is a directory named `.devcontainer` in the `workspaceRoot`, VSCode's **RemoteDevelopment** extension will use the `.devcontainer.json` and other container-related files inside the directory for It does `docker build`, container creation, etc.
 
 ```Dockerfile
 FROM python:3.12.1-slim-bullseye
