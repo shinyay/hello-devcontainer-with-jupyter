@@ -25,6 +25,8 @@ Place them under the `.devcontainer` directory.
 
 If there is a directory named `.devcontainer` in the `workspaceRoot`, VSCode's **RemoteDevelopment** extension will use the `.devcontainer.json` and other container-related files inside the directory for It does `docker build`, container creation, etc.
 
+#### Dockerfile
+
 ```Dockerfile
 FROM python:3.12.1-slim-bullseye
 USER root
@@ -37,6 +39,10 @@ RUN apt-get update && \
 # Install Basic Packages
 RUN pip install ipykernel jupyter
 ```
+
+- `L1`: A container image of the latest Python version as of Jan-11-2024 is specified.
+- `L4-L7`: I have installed the minimum required packages and upgraded `pip`` to provide a base Python environment.
+
 
 ```yaml
 version: "3"
