@@ -44,6 +44,36 @@ services:
     command: sleep infinity
 ```
 
+```json
+{
+	"name": "devcontainr_python3",
+	//"dockerFile": "Dockerfile",
+	"dockerComposeFile": "compose.yaml",
+	"service": "jupyter",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"forwardPorts": [8888],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+                "ms-python.python",
+				"ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
+            ],
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python3",
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#19549C",
+                    "titleBar.activeForeground": "#ffffff",
+                    "activityBar.background": "#02A7E3",
+                    "activityBar.foreground": "#ffffff"
+                }
+            }
+		}
+	}
+}
+```
+
 ## Demo
 
 ## Features
