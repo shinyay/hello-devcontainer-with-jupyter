@@ -36,13 +36,12 @@ RUN apt-get update && \
     apt-get -y install software-properties-common && \
     pip install --upgrade pip
 
-# Install Basic Packages
 RUN pip install ipykernel jupyter
 ```
 
 - `L1`: A container image of the latest Python version as of Jan-11-2024 is specified.
-- `L4-L7`: I have installed the minimum required packages and upgraded `pip`` to provide a base Python environment.
-
+- `L4-L7`: I have installed the minimum required packages and upgraded `pip` to provide a base Python environment.
+- `L9`: Two modules required for **Jupyter** are installed.
 
 ```yaml
 version: "3"
