@@ -96,6 +96,13 @@ services:
   - [ms-python.vscode-pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
   - [ms-toolsai.jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
+### Execute Dev Containers
+
+Follow the steps below to execute **Dev Containers**.
+
+1. Open **Command Pallette** by `F1`
+2. Select `> Dev Containers: Reopen in Container`
+
 ## Demo
 
 ## Features
