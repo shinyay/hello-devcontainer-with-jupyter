@@ -43,6 +43,8 @@ RUN pip install ipykernel jupyter
 - `L4-L7`: I have installed the minimum required packages and upgraded `pip` to provide a base Python environment.
 - `L9`: Two modules required for **Jupyter** are installed.
 
+#### compose.yaml
+
 ```yaml
 version: "3"
 services:
@@ -58,6 +60,9 @@ services:
       - 8888:8888
     command: sleep infinity
 ```
+
+- `L6`: Specify the PATH of Dockerfile
+- `L10`: Define the path of the workspace on the container
 
 ```json
 {
