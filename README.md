@@ -64,10 +64,11 @@ services:
 - `L6`: Specify the PATH of Dockerfile
 - `L10`: Define the path of the workspace on the container
 
+#### devcontainer.json
+
 ```json
 {
 	"name": "devcontainr_python3",
-	//"dockerFile": "Dockerfile",
 	"dockerComposeFile": "compose.yaml",
 	"service": "jupyter",
 	"workspaceFolder": "/workspace",
@@ -79,20 +80,21 @@ services:
                 "ms-python.python",
 				"ms-python.vscode-pylance",
                 "ms-toolsai.jupyter"
-            ],
-			"settings": {
-				"python.defaultInterpreterPath": "/usr/local/bin/python3",
-                "workbench.colorCustomizations": {
-                    "titleBar.activeBackground": "#19549C",
-                    "titleBar.activeForeground": "#ffffff",
-                    "activityBar.background": "#02A7E3",
-                    "activityBar.foreground": "#ffffff"
-                }
-            }
+            ]
 		}
 	}
 }
 ```
+
+- `L2`: Container name visible on VS Code
+- `L3`: Specify by relative path the docker-comopse file used to create the container
+- `L4`: Specify the service name of the container you want to open in VScode among the services in compose.yaml
+- `L5`: Specify the root folder when the container is opened
+- `L6`: Setting what to do with containers when a container screen is closed in VScode. `stopCompose` stops the container when the screen is closed
+- `L11-L13`: Specify VScode extensions to be installed with container creation
+  - [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - [ms-python.vscode-pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+  - [ms-toolsai.jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 ## Demo
 
