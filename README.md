@@ -1,6 +1,6 @@
 # Hello Dev Container with Jupyter
 
-Overview
+I know that many Python developers use **Jupyter**. I have just started learning Python, but I use Jupyter to check the operation because it is useful.
 
 ## Description
 
